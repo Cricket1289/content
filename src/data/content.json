@@ -1,0 +1,86 @@
+{
+  "navbar": {
+    "logo": "MediCare",
+    "top_links": [
+      { "label": "Buy Medicines", "href": "#services" },
+      { "label": "Find Doctors", "href": "#doctors" },
+      { "label": "Lab Tests", "href": "#lab-tests" },
+      { "label": "Circle Membership", "href": "#" },
+      { "label": "Health Records", "href": "#" }
+    ],
+    "categories": ["Apollo Products", "Baby Care", "Nutritional Drinks", "Women Care", "Personal Care", "Ayurveda", "Health Devices"],
+    "cta": "Login",
+    "search_placeholder": "Search Medicines, Health Products and more..."
+  },
+  "hero": {
+    "title": "Buy Medicines and Essentials",
+    "search_placeholder": "Search Medicines",
+    "tagline": "24/7 Delivery | Genuine Medicines | Professional Care"
+  },
+  "quick_actions": [
+    {
+      "title": "Get 20%* off on Medicines",
+      "subtitle": "UPLOAD NOW",
+      "icon": "📝",
+      "bg": "bg-pastel-green",
+      "accent": "text-green-700"
+    },
+    {
+      "title": "Doctor Appointment",
+      "subtitle": "BOOK NOW",
+      "icon": "👨‍⚕️",
+      "bg": "bg-pastel-blue",
+      "accent": "text-blue-700"
+    },
+    {
+      "title": "Health Insurance",
+      "subtitle": "EXPLORE PLANS",
+      "icon": "🛡️",
+      "bg": "bg-pastel-amber",
+      "accent": "text-amber-700"
+    },
+    {
+      "title": "Lab Tests",
+      "subtitle": "AT HOME",
+      "icon": "🔬",
+      "bg": "bg-pastel-pink",
+      "accent": "text-pink-700"
+    }
+  ],
+  "conditions": {
+    "title": "Browse by Health Conditions",
+    "items": [
+      { "name": "Diabetes Care", "icon": "💉" },
+      { "name": "Cardiac Care", "icon": "❤️" },
+      { "name": "Stomach Care", "icon": "🍕" },
+      { "name": "Pain Relief", "icon": "🦾" },
+      { "name": "Liver Care", "icon": "🫁" },
+      { "name": "Oral Care", "icon": "🦷" },
+      { "name": "Respiratory", "icon": "🫁" },
+      { "name": "Sexual Health", "icon": "🧬" },
+      { "name": "Elderly Care", "icon": "👨‍🦳" },
+      { "name": "Cold & Immunity", "icon": "🛡️" }
+    ],
+    "doctors": {
+      "title": "Top Doctors Available",
+      "items": [
+        { "name": "Dr. Sarah Chen", "specialty": "Cardiologist", "rating": "4.9", "color": "from-blue-100 to-indigo-100", "emoji": "👩‍⚕️" },
+        { "name": "Dr. James Patel", "specialty": "Neurologist", "rating": "4.8", "color": "from-green-100 to-emerald-100", "emoji": "👨‍⚕️" },
+        { "name": "Dr. Amara Obi", "specialty": "Dermatologist", "rating": "4.9", "color": "from-pink-100 to-rose-100", "emoji": "👩‍⚕️" },
+        { "name": "Dr. Liam Foster", "specialty": "Orthopedist", "rating": "4.7", "color": "from-amber-100 to-yellow-100", "emoji": "👨‍⚕️" }
+      ]
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "MediCare",
+      "slogan": "Your trusted partner in healthcare. Redefining pharmacy services with modern technology."
+    },
+    "links": {
+      "Services": ["Buy Medicines", "Find Doctors", "Lab Tests", "Insurance"],
+      "Help": ["Contact Us", "FAQs", "Returns", "Shipping"],
+      "Policy": ["Privacy", "Terms", "Conditions", "Legal"]
+    },
+    "copyright": "© 2026 MediCare Pharmacy. All rights reserved."
+  }
+}

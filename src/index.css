@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #004d40;
+  --color-primary-dark: #00332c;
+  --color-primary-light: #00695c;
+  --color-accent: #ffb74d;
+  --color-accent-dark: #f57c00;
+  --color-white: #ffffff;
+  --color-bg: #f8fafc;
+  --color-navy: #10142d;
+  --color-lavender: #e0e7ff;
+  --color-lime: #bef264;
+  --color-lime-dark: #a3e635;
+  --color-pastel-blue: #eef2ff;
+  --color-pastel-pink: #fdf2f8;
+  --color-pastel-green: #f0fdf4;
+  --color-pastel-amber: #fffbeb;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ── Reset & Base ─────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-navy);
+  color: var(--color-navy);
+  overflow-x: hidden;
+}
+
+/* ── Custom scrollbar for doctor carousel ─────────────── */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-lavender);
+  border-radius: 999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-navy);
+  border-radius: 999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-navy-light);
+}
+
+/* Firefox scrollbar */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-navy) var(--color-lavender);
+}
+
+/* ── Clip-path hero reveal ────────────────────────────── */
+@keyframes heroReveal {
+  from {
+    clip-path: inset(40% 40% 40% 40% round 3rem);
+  }
+  to {
+    clip-path: inset(0% 0% 0% 0% round 3rem);
+  }
+}
+
+.hero-reveal {
+  animation: heroReveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Glassmorphism ────────────────────────────────────── */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+/* ── Button glow ──────────────────────────────────────── */
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+}
+.btn-glow::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--color-lime), var(--color-lavender));
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+.btn-glow:hover::after {
+  opacity: 0.6;
+}
