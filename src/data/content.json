@@ -60,16 +60,7 @@
       { "name": "Sexual Health", "icon": "🧬" },
       { "name": "Elderly Care", "icon": "👨‍🦳" },
       { "name": "Cold & Immunity", "icon": "🛡️" }
-    ],
-    "doctors": {
-      "title": "Top Doctors Available",
-      "items": [
-        { "name": "Dr. Sarah Chen", "specialty": "Cardiologist", "rating": "4.9", "color": "from-blue-100 to-indigo-100", "emoji": "👩‍⚕️" },
-        { "name": "Dr. James Patel", "specialty": "Neurologist", "rating": "4.8", "color": "from-green-100 to-emerald-100", "emoji": "👨‍⚕️" },
-        { "name": "Dr. Amara Obi", "specialty": "Dermatologist", "rating": "4.9", "color": "from-pink-100 to-rose-100", "emoji": "👩‍⚕️" },
-        { "name": "Dr. Liam Foster", "specialty": "Orthopedist", "rating": "4.7", "color": "from-amber-100 to-yellow-100", "emoji": "👨‍⚕️" }
-      ]
-    }
+    ]
   },
   "footer": {
     "brand": {
