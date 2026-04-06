@@ -2,13 +2,36 @@
   "navbar": {
     "logo": "MediCare",
     "top_links": [
-      { "label": "Buy Medicines", "href": "#services" },
-      { "label": "Find Doctors", "href": "#doctors" },
-      { "label": "Lab Tests", "href": "#lab-tests" },
-      { "label": "Circle Membership", "href": "#" },
-      { "label": "Health Records", "href": "#" }
+      {
+        "label": "Buy Opticals",
+        "href": "#services"
+      },
+      {
+        "label": "Find Doctors",
+        "href": "#doctors"
+      },
+      {
+        "label": "Lab Tests",
+        "href": "#lab-tests"
+      },
+      {
+        "label": "Circle Membership",
+        "href": "#"
+      },
+      {
+        "label": "Health Records",
+        "href": "#"
+      }
     ],
-    "categories": ["Apollo Products", "Baby Care", "Nutritional Drinks", "Women Care", "Personal Care", "Ayurveda", "Health Devices"],
+    "categories": [
+      "Apollo Products",
+      "Baby Care",
+      "Nutritional Drinks",
+      "Women Care",
+      "Personal Care",
+      "Ayurveda",
+      "Health Devices"
+    ],
     "cta": "Login",
     "search_placeholder": "Search Medicines, Health Products and more..."
   },
@@ -50,16 +73,46 @@
   "conditions": {
     "title": "Browse by Health Conditions",
     "items": [
-      { "name": "Diabetes Care", "icon": "💉" },
-      { "name": "Cardiac Care", "icon": "❤️" },
-      { "name": "Stomach Care", "icon": "🍕" },
-      { "name": "Pain Relief", "icon": "🦾" },
-      { "name": "Liver Care", "icon": "🫁" },
-      { "name": "Oral Care", "icon": "🦷" },
-      { "name": "Respiratory", "icon": "🫁" },
-      { "name": "Sexual Health", "icon": "🧬" },
-      { "name": "Elderly Care", "icon": "👨‍🦳" },
-      { "name": "Cold & Immunity", "icon": "🛡️" }
+      {
+        "name": "Diabetes Care",
+        "icon": "💉"
+      },
+      {
+        "name": "Cardiac Care",
+        "icon": "❤️"
+      },
+      {
+        "name": "Stomach Care",
+        "icon": "🍕"
+      },
+      {
+        "name": "Pain Relief",
+        "icon": "🦾"
+      },
+      {
+        "name": "Liver Care",
+        "icon": "🫁"
+      },
+      {
+        "name": "Oral Care",
+        "icon": "🦷"
+      },
+      {
+        "name": "Respiratory",
+        "icon": "🫁"
+      },
+      {
+        "name": "Sexual Health",
+        "icon": "🧬"
+      },
+      {
+        "name": "Elderly Care",
+        "icon": "👨‍🦳"
+      },
+      {
+        "name": "Cold & Immunity",
+        "icon": "🛡️"
+      }
     ]
   },
   "footer": {
@@ -68,9 +121,24 @@
       "slogan": "Your trusted partner in healthcare. Redefining pharmacy services with modern technology."
     },
     "links": {
-      "Services": ["Buy Medicines", "Find Doctors", "Lab Tests", "Insurance"],
-      "Help": ["Contact Us", "FAQs", "Returns", "Shipping"],
-      "Policy": ["Privacy", "Terms", "Conditions", "Legal"]
+      "Services": [
+        "Buy Medicines",
+        "Find Doctors",
+        "Lab Tests",
+        "Insurance"
+      ],
+      "Help": [
+        "Contact Us",
+        "FAQs",
+        "Returns",
+        "Shipping"
+      ],
+      "Policy": [
+        "Privacy",
+        "Terms",
+        "Conditions",
+        "Legal"
+      ]
     },
     "copyright": "© 2026 MediCare Pharmacy. All rights reserved."
   }
