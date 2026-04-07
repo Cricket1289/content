@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { FADE_UP, STAGGER_CONTAINER } from "../utils/animations";
+import { motion } from "framer-motion";
+import { STAGGER_CONTAINER } from "../utils/animations";
 
 export default function Admin() {
     const [content, setContent] = useState<any>(null);
@@ -95,6 +95,7 @@ export default function Admin() {
                         <TabButton id="hero" label="Hero Banner" active={activeTab} onClick={setActiveTab} />
                         <TabButton id="quick_actions" label="Quick Actions" active={activeTab} onClick={setActiveTab} />
                         <TabButton id="conditions" label="Health Conditions" active={activeTab} onClick={setActiveTab} />
+                        <TabButton id="faq" label="FAQ Section" active={activeTab} onClick={setActiveTab} />
                         <TabButton id="navbar" label="Navigation" active={activeTab} onClick={setActiveTab} />
                     </nav>
                 </aside>
@@ -149,6 +150,61 @@ export default function Admin() {
                                     </div>
                                 ))}
                             </div>
+                        )}
+
+                        {activeTab === "faq" && (
+                            <motion.div variants={STAGGER_CONTAINER} initial="hidden" animate="show" className="space-y-6">
+                                <div className="flex items-center justify-between">
+                                    <h2 className="text-2xl font-bold text-navy">FAQ Management</h2>
+                                    <button 
+                                        onClick={() => {
+                                            const newFaq = { ...content.faq };
+                                            newFaq.items.push({ question: "New Question", answer: "New Answer" });
+                                            setContent({...content, faq: newFaq});
+                                        }}
+                                        className="text-sm font-bold text-primary px-4 py-2 border border-primary/20 rounded-lg hover:bg-primary hover:text-white transition-all"
+                                    >
+                                        + Add Question
+                                    </button>
+                                </div>
+                                
+                                {content.faq.items.map((item: any, index: number) => (
+                                    <div key={index} className="bg-white p-6 rounded-xl border border-lavender space-y-4 relative group">
+                                        <button 
+                                            onClick={() => {
+                                                const newFaq = { ...content.faq };
+                                                newFaq.items.splice(index, 1);
+                                                setContent({...content, faq: newFaq});
+                                            }}
+                                            className="absolute top-4 right-4 text-navy/20 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
+                                        >
+                                            🗑️
+                                        </button>
+                                        <InputField 
+                                            label="Question" 
+                                            value={item.question} 
+                                            onChange={(v) => {
+                                                const newFaq = { ...content.faq };
+                                                newFaq.items[index].question = v;
+                                                setContent({...content, faq: newFaq});
+                                            }} 
+                                        />
+                                        <div className="space-y-2">
+                                            <label className="block text-xs font-bold text-navy/40 uppercase tracking-widest">Answer</label>
+                                            <textarea 
+                                                value={item.answer} 
+                                                onChange={(e) => {
+                                                    const newFaq = { ...content.faq };
+                                                    newFaq.items[index].answer = e.target.value;
+                                                    setContent({...content, faq: newFaq});
+                                                }}
+                                                className="w-full bg-white border border-lavender rounded-xl px-4 py-3 text-sm font-medium outline-none focus:border-primary transition-colors shadow-sm"
+                                                rows={3}
+                                            />
+                                        </div>
+                                    </div>
+                                ))}
+                            </motion.div>
                         )}
 
                         {/* Commit Message */}

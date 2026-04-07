@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import ServiceGrid from "../components/ServiceGrid";
 import DoctorCarousel from "../components/DoctorCarousel";
 import LabTests from "../components/LabTests";
+import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
                 <ServiceGrid />
                 <DoctorCarousel />
                 <LabTests />
+                <FAQ />
                 <Footer />
             </Layout>
         </div>
